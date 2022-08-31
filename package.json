@@ -1,0 +1,17 @@
+{
+  "name": "cypress-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.6.0",
+    "cy-verify-downloads": "^0.1.8",
+    "cypress-downloadfile": "^1.2.2"
+  }
+}
