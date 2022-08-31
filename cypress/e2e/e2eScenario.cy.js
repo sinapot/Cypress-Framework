@@ -12,7 +12,7 @@ describe('using fixture', ()  => {
         })
       })
       
-      it.skip('Add Product then checkout', () => {
+      it('Add Product then checkout', () => {
         cy.visit('/');
 
         //add item to cart
@@ -22,6 +22,8 @@ describe('using fixture', ()  => {
         //your shopping cart page
         cy.get('.navigation_page').should('have.text','Your shopping cart')
         cy.get('.cart_navigation').contains('Proceed').click()
+        cy.percySnapshot();
+
 
         //address page
         cy.get("textarea[name='message']").type(user1.comment)
@@ -32,6 +34,7 @@ describe('using fixture', ()  => {
         cy.get('.navigation_page').should('have.text','Shipping')
         cy.get('#cgv').check()
         cy.get('.cart_navigation').contains('Proceed').click()
+        cy.percySnapshot();
         
         //payment method stage
         cy.get('.navigation_page').should('have.text','Your payment method')
@@ -40,6 +43,8 @@ describe('using fixture', ()  => {
         //order summary
         cy.get('.navigation_page').should('have.text','Check payment')
         cy.get('.cart_navigation').contains('confirm').click()
+        cy.percySnapshot();
+
         
         //order success
         cy.get('.alert.alert-success').should('contain.text','Your order on My Store is complete.')
