@@ -4,14 +4,16 @@
   "description": "",
   "main": "cypress.config.js",
   "scripts": {
-    "test": "npx cypress run"
+    "test": "percy exec -- cypress run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^10.6.0",
+    "@percy/cli": "^1.10.0",
+    "@percy/cypress": "^3.1.2",
     "cy-verify-downloads": "^0.1.8",
+    "cypress": "^10.6.0",
     "cypress-downloadfile": "^1.2.2"
   }
 }
