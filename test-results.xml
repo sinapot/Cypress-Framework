@@ -1,67 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.0000" tests="1" failures="1">
-  <testsuite name="Root Suite" timestamp="2022-08-31T06:06:56" tests="0" file="cypress\e2e\usingFixture.cy.js" time="0.0000" failures="0">
+<testsuites name="Mocha Tests" time="24.9440" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-08-31T06:42:13" tests="0" file="cypress\e2e\usingEach.cy.js" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="using fixture" timestamp="2022-08-31T06:06:56" tests="1" time="0.0000" failures="1">
-    <testcase name="using fixture Sign in" time="0.0000" classname="Sign in">
-      <failure message="`cy.visit()` failed trying to load:
-
-http://automationpractice.com/index.php/?controller=contact
-
-We attempted to make an http request to this URL but the request failed without a response.
-
-We received this error at the network level:
-
-  &gt; Error: ESOCKETTIMEDOUT
-
-Common situations why this would fail:
-  - you don&apos;t have internet access
-  - you forgot to run / boot your web server
-  - your web server isn&apos;t accessible
-  - you have weird network configuration settings on your computer" type="CypressError"><![CDATA[CypressError: `cy.visit()` failed trying to load:
-
-http://automationpractice.com/index.php/?controller=contact
-
-We attempted to make an http request to this URL but the request failed without a response.
-
-We received this error at the network level:
-
-  > Error: ESOCKETTIMEDOUT
-
-Common situations why this would fail:
-  - you don't have internet access
-  - you forgot to run / boot your web server
-  - your web server isn't accessible
-  - you have weird network configuration settings on your computer
-    at http://automationpractice.com/__cypress/runner/cypress_runner.js:152359:82
-    at visitFailedByErr (http://automationpractice.com/__cypress/runner/cypress_runner.js:151661:12)
-    at http://automationpractice.com/__cypress/runner/cypress_runner.js:152358:11
-    at tryCatcher (http://automationpractice.com/__cypress/runner/cypress_runner.js:11318:23)
-    at Promise._settlePromiseFromHandler (http://automationpractice.com/__cypress/runner/cypress_runner.js:9253:31)
-    at Promise._settlePromise (http://automationpractice.com/__cypress/runner/cypress_runner.js:9310:18)
-    at Promise._settlePromise0 (http://automationpractice.com/__cypress/runner/cypress_runner.js:9355:10)
-    at Promise._settlePromises (http://automationpractice.com/__cypress/runner/cypress_runner.js:9431:18)
-    at _drainQueueStep (http://automationpractice.com/__cypress/runner/cypress_runner.js:6025:12)
-    at _drainQueue (http://automationpractice.com/__cypress/runner/cypress_runner.js:6018:9)
-    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://automationpractice.com/__cypress/runner/cypress_runner.js:6034:5)
-    at Async.drainQueues (http://automationpractice.com/__cypress/runner/cypress_runner.js:5904:14)
-From Your Spec Code:
-    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress\e2e\usingFixture.cy.js:114:8)
-
-From Node.js Internals:
-  Error: ESOCKETTIMEDOUT
-      at ClientRequest.<anonymous> (C:\Users\omi\AppData\Local\Cypress\Cache\10.6.0\Cypress\resources\app\node_modules\@cypress\request\request.js:808:19)
-      at Object.onceWrapper (node:events:645:28)
-      at ClientRequest.emit (node:events:526:28)
-      at ClientRequest.emit (node:domain:475:12)
-      at Socket.emitRequestTimeout (node:_http_client:758:9)
-      at Object.onceWrapper (node:events:645:28)
-      at Socket.emit (node:events:538:35)
-      at Socket.emit (node:domain:475:12)
-      at Socket._onTimeout (node:net:501:8)
-      at listOnTimeout (node:internal/timers:559:17)
-      at processTimers (node:internal/timers:502:7)
-  ]]></failure>
+  <testsuite name="using fixture" timestamp="2022-08-31T06:42:13" tests="1" time="24.9440" failures="0">
+    <testcase name="using fixture Add Product then checkout" time="24.9440" classname="Add Product then checkout">
     </testcase>
   </testsuite>
 </testsuites>

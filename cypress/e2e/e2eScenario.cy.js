@@ -12,7 +12,7 @@ describe('using fixture', ()  => {
         })
       })
       
-      it('Add Product then checkout', () => {
+      it.skip('Add Product then checkout', () => {
         cy.visit('/');
 
         //add item to cart
