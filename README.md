@@ -1,7 +1,10 @@
 # Cypress-Framework
 This is my cypress automation playground where I explore and test Cypress capabilities.
 
-**This framewoek features visual tests with Percy.IO**  
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/d27cd783/cypress-framework)
+**This project is using Percy.io for visual regression testing**  
+
+
 **Uses Github Actions to trigger Cypress tests in CI/CD**  
 **For every PR, visual tests will be done by PERCY.IO to see if there are diffs**  
 
