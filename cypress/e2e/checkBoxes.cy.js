@@ -22,6 +22,6 @@ describe('Checkboxes', () => {
       cy.get('#ul_layered_quantity_0').find('.checkbox').check()
       cy.get('#ul_layered_manufacturer_0').find('.checkbox').check()
       cy.get('#ul_layered_condition_0').find('.checkbox').check()
-      cy.percySnapshot()
+      cy.percySnapshot("checkboxes")
     })
   })

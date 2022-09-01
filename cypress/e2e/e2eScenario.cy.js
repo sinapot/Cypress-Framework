@@ -22,7 +22,7 @@ describe('using fixture', ()  => {
         //your shopping cart page
         cy.get('.navigation_page').should('have.text','Your shopping cart')
         cy.get('.cart_navigation').contains('Proceed').click()
-        cy.percySnapshot();
+        cy.percySnapshot("cart");
 
 
         //address page
@@ -34,7 +34,7 @@ describe('using fixture', ()  => {
         cy.get('.navigation_page').should('have.text','Shipping')
         cy.get('#cgv').check()
         cy.get('.cart_navigation').contains('Proceed').click()
-        cy.percySnapshot();
+        cy.percySnapshot("shipping");
         
         //payment method stage
         cy.get('.navigation_page').should('have.text','Your payment method')
@@ -43,7 +43,7 @@ describe('using fixture', ()  => {
         //order summary
         cy.get('.navigation_page').should('have.text','Check payment')
         cy.get('.cart_navigation').contains('confirm').click()
-        cy.percySnapshot();
+        cy.percySnapshot("payment method");
 
         
         //order success
