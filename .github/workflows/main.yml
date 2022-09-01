@@ -23,3 +23,5 @@ jobs:
         
       - name: Run tests
         run: npm test
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
